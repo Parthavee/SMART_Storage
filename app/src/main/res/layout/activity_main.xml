@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="Sign-Up"
+        android:textSize="40dp"
+        android:textColor="@color/purple_700"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <EditText
+        android:id="@+id/email_sign"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_backgorund"
+        android:hint="Enter Email"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="15dp"
+        android:elevation="3dp"
+        android:padding="3dp"
+        android:layout_marginTop="100dp"
+        />
+    <EditText
+        android:id="@+id/password_sign"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_backgorund"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:hint="Enter Password"
+        android:layout_gravity="center"
+        android:drawablePadding="15dp"
+        android:elevation="3dp"
+        android:paddingStart="5dp"
+        android:padding="3dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="220dp"
+        android:text="Sign-Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-220dp"
+        android:text="Login"
+        android:textColor="@color/purple_700"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="128dp" />
+
+</LinearLayout>

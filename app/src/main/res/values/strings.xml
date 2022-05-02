@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Storage_demo</string>
+    <string-array name="Grain">
+        <item>--Select--</item>
+        <item>Wheat</item>
+        <item>Rice</item>
+        <item>Corn</item>
+        <item>Lentil</item>
+    </string-array>
+</resources>

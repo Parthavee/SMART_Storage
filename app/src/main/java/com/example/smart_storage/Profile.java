@@ -8,8 +8,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Profile extends AppCompatActivity {
-    TextView textView2;
-    ImageView ImageView2;
     EditText email;
     EditText surname;
     EditText username;

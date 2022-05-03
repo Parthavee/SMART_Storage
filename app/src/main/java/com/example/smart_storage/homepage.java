@@ -18,7 +18,7 @@ public class homepage extends AppCompatActivity {
     Button alert;
     Button dg;
     Button security;
-    Button profile;
+    Button profile,connect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +27,18 @@ public class homepage extends AppCompatActivity {
         logout = findViewById(R.id.logout);
         foodgrn = findViewById(R.id.button2);
         alert = findViewById(R.id.button3);
+        connect = findViewById(R.id.connect);
         dg = findViewById(R.id.button4);
         security = findViewById(R.id.button5);
         profile = findViewById(R.id.button6);
 
+        connect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homepage.this,Connect.class);
+                startActivity(intent);
+            }
+        });
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

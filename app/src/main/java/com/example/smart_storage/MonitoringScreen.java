@@ -20,13 +20,14 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.UUID;
 
-public class MonitoringScreen extends Activity {
+public class MonitoringScreen extends AppCompatActivity {
 
     private static final String TAG = "BlueTest5-Connect";
     private int mMaxChars = 50000;//Default
@@ -285,6 +286,3 @@ public class MonitoringScreen extends Activity {
         }
     }
 }
- 
- 
- 

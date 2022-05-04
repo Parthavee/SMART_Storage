@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smart_storage">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -21,7 +24,13 @@
             android:exported="false" />
         <activity
             android:name=".Connect"
-            android:exported="false" />
+             />
+        <activity
+            android:name=".PreferencesActivity"
+             />
+        <activity
+            android:name=".MonitoringScreen"
+             />
         <activity
             android:name=".Quality"
             android:exported="false" />

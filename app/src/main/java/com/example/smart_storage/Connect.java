@@ -109,13 +109,12 @@ public class Connect extends AppCompatActivity {
 
         connect.setOnClickListener(new View.OnClickListener() {
 
-            class MonitoringScreen {
-            }
+
 
             @Override
             public void onClick(View arg0) {
                 BluetoothDevice device = ((MyAdapter) (listView.getAdapter())).getSelectedItem();
-                Intent intent = new Intent(getApplicationContext(), MonitoringScreen.class);
+                Intent intent = new Intent(Connect.this, MonitoringScreen.class);
                 intent.putExtra(DEVICE_EXTRA, device);
                 intent.putExtra(DEVICE_UUID, mDeviceUUID.toString());
                 intent.putExtra(BUFFER_SIZE, mBufferSize);
